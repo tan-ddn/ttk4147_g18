@@ -6,7 +6,7 @@
 int main()
 {
     printf("busy_wait function: waits for 1 second.");
-    struct timespec t;
-    busy_wait(1);
+    struct timespec t = {1};
+    busy_wait(t);
     return 0;
 }
