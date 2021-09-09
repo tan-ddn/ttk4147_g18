@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1630590348 source:/home/student/gruppe18/ttk4147_g18/ex1/main.c
+	<stdio.h>
+	"sort.h"
+
+1630590625 /home/student/gruppe18/ttk4147_g18/ex1/sort.h
+
+1630590498 source:/home/student/gruppe18/ttk4147_g18/ex1/sort.c
+	<stdlib.h>
+
