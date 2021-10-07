@@ -113,7 +113,7 @@ void array_insertBack(Array* a, long stuff){
 	
     if (a->back+1>=a->capacity)
     {
-        array_reserve(a, 2*a->capacity);
+        array_reserve(a, 1.5*a->capacity);
     }
     
     a->data[a->back] = stuff;

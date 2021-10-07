@@ -8,7 +8,7 @@ int main ()
 {
 	long capacity = 2;
 	Array array1 = array_new(capacity);
-    long size = 10*1000*1000; 
+    long size = 100*1000*1000; 
 	for(int i=0; i< size; i++)
 	{
 		array_insertBack(&array1, i);
