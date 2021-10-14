@@ -1,0 +1,121 @@
+Task A
+
+global number 50208364
+local number 50000000
+global number 50964255
+local number 50000000
+real    0m0,182s
+user    0m0,357s
+sys     0m0,004s
+
+
+Task B
+
+==================
+WARNING: ThreadSanitizer: data race (pid=3984)
+  Write of size 8 at 0x0000014ca9b8 by thread T2:
+    #0 fn /home/student/gruppe18/ex7/taskA.c:16 (taskB+0x4b873d)
+
+  Previous write of size 8 at 0x0000014ca9b8 by thread T1:
+    #0 fn /home/student/gruppe18/ex7/taskA.c:16 (taskB+0x4b873d)
+
+  Location is global '<null>' at 0x000000000000 (taskB+0x0000014ca9b8)
+
+  Thread T2 (tid=3987, running) created by main thread at:
+    #0 pthread_create ??:? (taskB+0x426ff6)
+    #1 main /home/student/gruppe18/ex7/taskA.c:31 (taskB+0x4b8809)
+
+  Thread T1 (tid=3986, running) created by main thread at:
+    #0 pthread_create ??:? (taskB+0x426ff6)
+    #1 main /home/student/gruppe18/ex7/taskA.c:30 (taskB+0x4b87ea)
+
+SUMMARY: ThreadSanitizer: data race /home/student/gruppe18/ex7/taskA.c:16 in fn
+==================
+
+global number 15460802
+
+
+Task C
+
+global number 100000000
+==================
+WARNING: ThreadSanitizer: data race (pid=3835)
+  Read of size 8 at 0x0000014ca9b8 by thread T2:
+    #0 fn /home/student/gruppe18/ex7/taskC.c:21 (taskC+0x4b8796)
+
+  Previous write of size 8 at 0x0000014ca9b8 by thread T1:
+    #0 fn /home/student/gruppe18/ex7/taskC.c:17 (taskC+0x4b874c)
+
+  Location is global '<null>' at 0x000000000000 (taskC+0x0000014ca9b8)
+
+  Thread T2 (tid=3838, running) created by main thread at:
+    #0 pthread_create ??:? (taskC+0x426ff6)
+    #1 main /home/student/gruppe18/ex7/taskC.c:35 (taskC+0x4b8844)
+
+  Thread T1 (tid=3837, running) created by main thread at:
+    #0 pthread_create ??:? (taskC+0x426ff6)
+    #1 main /home/student/gruppe18/ex7/taskC.c:34 (taskC+0x4b8825)
+
+SUMMARY: ThreadSanitizer: data race /home/student/gruppe18/ex7/taskC.c:21 in fn
+==================
+local number 50000000
+global number 100000000
+ThreadSanitizer: reported 1 warnings
+local number 50000000
+real    1m30,972s
+user    1m49,456s
+sys     1m11,825s
+
+Task D
+
+Initializing singleton...
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{0 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 0 0 0}
+Got singleton 0x7fe588000f30:{1 22 0 0}
+Got singleton 0x7fe588000f30:{1 22 0 0}
+Got singleton 0x7fe588000f30:{1 22 0 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 0}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
+Got singleton 0x7fe588000f30:{1 22 333 4444}
